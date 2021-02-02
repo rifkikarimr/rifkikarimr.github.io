@@ -1,6 +1,5 @@
 html {
   position: relative;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +18,7 @@ hr {
 }
 
 .about {
-  padding-top: 100px;
+  padding-top: 130px;
   min-height: 600px;
 }
 
