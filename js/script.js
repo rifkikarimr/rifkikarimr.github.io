@@ -1,15 +1,15 @@
-// effect ketika di klik
-$('.page-scroll').on('click', function(){
+// efek ketika link di klik
+$('.page-scroll').on('click', function(e){
 
   // ambil isi href
-  var href = $(this).attr('href');
-  // ammbil element
-  var elemenHref = $(href);
+  var tujuan = $(this).attr('href');
 
-  //pindahkan scroll
+  // tangkap element yang bersangkutan
+  var elemenTujuan = $(tujuan);
+
   $('html, body').animate({
-    scrollTop: elemenHref.offset().top - 100
-  }, 1000, 'swing')
+      scrollTop: elemenTujuan.offset().top - 50
+  }, 1250, 'swing');
 
   e.preventDefault();
 });
