@@ -7,9 +7,23 @@ body {
   margin-top: 30px;
 }
 
-.jumbotoron img {
+.jumbotron {
+  color: #eaeaea;
+  background-image: url('../pict/bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 -300px;
+  overflow: hidden;
+}
+
+.jumbotron img {
   width: 200px;
-  border: 5px solid #666;
+  border: 5px solid rgb(247, 246, 246);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.jumbotron h1, .jumbotron p {
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
 hr {
@@ -17,15 +31,44 @@ hr {
   border-top: 3px solid #999;
 }
 
+section {
+  min-height: 500px;
+}
+
+.pLeft, .pRight  {
+  opacity: 0;
+  transform: translate(-50px, 0) rotate(15deg);
+  transition: 1s;
+}
+
+.pRight {
+  transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pLeft.pMuncul, .pRight.pMuncul{
+  opacity: 1;
+  transform: translate(0,0);
+}
+
 .about {
-  padding-top: 130px;
-  min-height: 600px;
+  min-height: 400px;
 }
 
 .portfolio {
   padding-top: 100px;
   background-color: #eee;
-  min-height: 800px;
+  min-height: 600px;
+}
+
+.portfolio .thumbnail {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 1s;
+}
+
+.portfolio .thumbnail.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 footer {
@@ -40,4 +83,9 @@ footer {
 footer p {
   color: #aaa;
   font-size: 0.9em;
+}
+
+#time{
+  font-size: medium;
+  font-family: monospace;
 }
