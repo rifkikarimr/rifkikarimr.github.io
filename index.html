@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Rifki Karim Ramadhan</title>
+    <title>Portfolio</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,7 +35,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#about" class="page-scroll">About</a></li>
-            <li><a href="#portfolio" class="page-scroll">Portofolio</a></li>
+            <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
           </ul>
         </div>
       </div>
@@ -46,9 +45,9 @@
 
     <!-- jumbotron -->
       <div class="jumbotron text-center">
-        <img src="pict/me.png" class="img-circle">
+        <img src="pict/me1.jpg" class="img-circle">
         <h1>Rifki Karim Ramadhan</h1>
-        <p>Computer Engineering Student at Brawijaya University</p>
+        <p>Computer Engineering Student | Web Design Enthusiast</p>
       </div>
     <!-- akhir jumbotron -->
 
@@ -64,16 +63,16 @@
         </div>
         <div class="row">
           <div class="col-sm-5 col-sm-offset-1">
-            <p>
+            <p class="pLeft">
               I am a 4th-semester student majoring in computer engineering at Brawijaya University,
-              I learned about computer systems, microcontrollers such as Arduino and FPGA with the programming languages that I learned namely C, C ++, VHDL.
+              I learned about computer systems, microcontrollers such as Arduino and FPGA with the programming languages ​​that I learned namely C, C ++, VHDL.
               Besides that, I am interested in Web development, I have attended web development courses, and created several projects.
             </p>
           </div>
           <div class="col-sm-5">
-            <p>
+            <p class="pRight">
               Many organizational experiences that I participated,
-              especially the Ministry of Relations in Badan Eksekutif Mahasiswa, and Division of Public Relation in several event campus.
+              especially the Web Manager at TEDxUB, External Relations in Badan Eksekutif Mahasiswa, and Division of Public Relation in some event campus.
               Also, I have been a Master Of Ceremony and Moderator in several events.
             </p>
           </div>
@@ -90,17 +89,17 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h2 class="text-center">Portofolio</h2>
+            <h2 class="text-center">Portfolio</h2>
             <hr>
           </div>
           <div class="col-sm-6">
-            <a href="https://rifkikarimr.github.io/portfolio1" class="thumbnail">
+            <a href="https://rifkikarimr.github.io/portfolio1/" class="thumbnail">
               <img src="pict/pt1.png">
             </a>
           </div>
           <div class="col-sm-6">
-            <a href="https://rifkikarimr.github.io/portfolio2" class="thumbnail">
-              <img src="pict/pt2.png">
+            <a href="https://rifkikarimr.github.io/portfolio2/" class="thumbnail">
+              <img src="pict/pt3.png">
             </a>
           </div>
         </div>
@@ -114,6 +113,7 @@
         <div class="row">
           <div class="col-sm-12">
             <p>&copy; copyright 2021 | built by <a href="https://instagram.com/rifkikarim.r">Rifki Karim Ramadhan</a>.</p>
+            <p id="time"></p>
           </div>
         </div>
       </div>
@@ -126,5 +126,15 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+      // 1 detik = 1000
+      window.setTimeout("waktu()",1000);
+      function waktu() {
+      var tanggal = new Date();
+      setTimeout("waktu()",1000);
+      document.getElementById("time").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();
+      }
+  </script>
+
   </body>
 </html>
